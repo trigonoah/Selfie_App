@@ -14,6 +14,9 @@
 		047697241B5895C200416ADF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047697231B5895C200416ADF /* Images.xcassets */; };
 		047697271B5895C200416ADF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047697251B5895C200416ADF /* LaunchScreen.xib */; };
 		047697331B5895C200416ADF /* Selfie_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047697321B5895C200416ADF /* Selfie_AppTests.m */; };
+		0476973E1B5895D900416ADF /* WebServiceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476973D1B5895D900416ADF /* WebServiceHandler.m */; };
+		047697411B5895F100416ADF /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 047697401B5895F100416ADF /* JSONParser.m */; };
+		047697441B58AF4500416ADF /* Selfie.m in Sources */ = {isa = PBXBuildFile; fileRef = 047697431B58AF4500416ADF /* Selfie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		0476972C1B5895C200416ADF /* Selfie_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Selfie_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047697311B5895C200416ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047697321B5895C200416ADF /* Selfie_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Selfie_AppTests.m; sourceTree = "<group>"; };
+		0476973C1B5895D900416ADF /* WebServiceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceHandler.h; sourceTree = "<group>"; };
+		0476973D1B5895D900416ADF /* WebServiceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceHandler.m; sourceTree = "<group>"; };
+		0476973F1B5895F100416ADF /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		047697401B5895F100416ADF /* JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParser.m; sourceTree = "<group>"; };
+		047697421B58AF4500416ADF /* Selfie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Selfie.h; sourceTree = "<group>"; };
+		047697431B58AF4500416ADF /* Selfie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selfie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,12 @@
 				0476971B1B5895C200416ADF /* AppDelegate.m */,
 				0476971D1B5895C200416ADF /* ViewController.h */,
 				0476971E1B5895C200416ADF /* ViewController.m */,
+				0476973C1B5895D900416ADF /* WebServiceHandler.h */,
+				0476973D1B5895D900416ADF /* WebServiceHandler.m */,
+				0476973F1B5895F100416ADF /* JSONParser.h */,
+				047697401B5895F100416ADF /* JSONParser.m */,
+				047697421B58AF4500416ADF /* Selfie.h */,
+				047697431B58AF4500416ADF /* Selfie.m */,
 				047697201B5895C200416ADF /* Main.storyboard */,
 				047697231B5895C200416ADF /* Images.xcassets */,
 				047697251B5895C200416ADF /* LaunchScreen.xib */,
@@ -222,6 +237,9 @@
 				0476971F1B5895C200416ADF /* ViewController.m in Sources */,
 				0476971C1B5895C200416ADF /* AppDelegate.m in Sources */,
 				047697191B5895C200416ADF /* main.m in Sources */,
+				047697441B58AF4500416ADF /* Selfie.m in Sources */,
+				047697411B5895F100416ADF /* JSONParser.m in Sources */,
+				0476973E1B5895D900416ADF /* WebServiceHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +434,7 @@
 				047697381B5895C200416ADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		047697391B5895C200416ADF /* Build configuration list for PBXNativeTarget "Selfie_AppTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				0476973B1B5895C200416ADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

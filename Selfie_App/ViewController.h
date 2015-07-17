@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebServiceHandler.h"
+#import "JSONParser.h"
+#import "Selfie.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <WebServiceHandlerDelegate, JSONParserDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UITextFieldDelegate>
 
+@property (strong, nonatomic) IBOutlet UICollectionView *collView;
+@property (strong, nonatomic) IBOutlet UITextField *txtTagSearch;
 
 @end
 
