@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FzV-Eg-Ndm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oRy-gX-g3a">
                                     <size key="itemSize" width="150" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -27,7 +28,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="hYu-AK-TNY">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -42,10 +43,7 @@
                                 </connections>
                             </collectionView>
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.49999999999999961" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tag search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2mm-WF-aBf">
-                                <rect key="frame" x="158" y="6" width="146" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="146" id="NLW-AI-xwS"/>
-                                </constraints>
+                                <rect key="frame" x="87" y="6" width="146" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -56,11 +54,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FzV-Eg-Ndm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="06M-Jl-9g8"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2mm-WF-aBf" secondAttribute="bottom" constant="532" id="Ua4-8T-WbO"/>
-                            <constraint firstItem="2mm-WF-aBf" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="X7r-U4-p3n"/>
+                            <constraint firstItem="FzV-Eg-Ndm" firstAttribute="top" secondItem="2mm-WF-aBf" secondAttribute="bottom" constant="8" symbolic="YES" id="9a7-mT-IXL"/>
+                            <constraint firstItem="2mm-WF-aBf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="71" id="WGT-En-JrR"/>
                             <constraint firstItem="FzV-Eg-Ndm" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="c9W-wg-gSV"/>
                             <constraint firstAttribute="trailing" secondItem="FzV-Eg-Ndm" secondAttribute="trailing" id="gsv-ia-kUw"/>
-                            <constraint firstItem="FzV-Eg-Ndm" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="mP9-gG-p0d"/>
+                            <constraint firstItem="FzV-Eg-Ndm" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="44" id="mP9-gG-p0d"/>
+                            <constraint firstItem="2mm-WF-aBf" firstAttribute="centerX" secondItem="FzV-Eg-Ndm" secondAttribute="centerX" id="tik-Wp-BHv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -73,9 +72,4 @@
             <point key="canvasLocation" x="168" y="234"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

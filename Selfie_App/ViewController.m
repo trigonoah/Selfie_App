@@ -175,5 +175,8 @@ static NSString const *selfieURL = @"https://api.instagram.com/v1/tags/selfie/me
     return YES;
 }
 
+-(BOOL)prefersStatusBarHidden {
+    return YES;
+}
 
 @end
